@@ -18,7 +18,7 @@ function App() {
         <Consultation />
         <footer className="border-t border-white/10 py-10">
           <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-blue-200/80">
-            <p>© {new Date().getFullYear()} Your Ad Partner. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} Linwi Production llc. All rights reserved.</p>
             <div className="flex items-center gap-4">
               <a href="/test" className="hover:text-white">System Status</a>
               <a href="#consult" onClick={(e)=>{e.preventDefault(); document.getElementById('consult')?.scrollIntoView({behavior:'smooth'})}} className="px-3 py-1.5 rounded bg-blue-600 text-white hover:bg-blue-500 transition">Book a Call</a>

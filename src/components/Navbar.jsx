@@ -13,7 +13,7 @@ const Navbar = () => {
     <header className="fixed top-0 inset-x-0 z-50 backdrop-blur bg-slate-900/60 border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="h-16 flex items-center justify-between">
-          <div className="text-white font-semibold text-lg">Your Ad Partner</div>
+          <div className="text-white font-semibold text-lg">Linwi Production llc</div>
           <nav className="hidden md:flex items-center gap-6 text-blue-100">
             <button onClick={() => scrollTo('packages')} className="hover:text-white transition">Packages</button>
             <button onClick={() => scrollTo('consult')} className="hover:text-white transition">Consultation</button>
