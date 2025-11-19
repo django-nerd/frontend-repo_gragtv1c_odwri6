@@ -83,7 +83,13 @@ const Consultation = () => {
                 </div>
                 <div className="sm:col-span-2">
                   <label className="block text-sm text-blue-100 mb-1">Budget range</label>
-                  <input name="budget_range" value={form.budget_range} onChange={handleChange} placeholder="$3k-$10k/mo" className="w-full rounded-lg bg-white/10 border border-white/10 text-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                  <select name="budget_range" value={form.budget_range} onChange={handleChange} required className="w-full rounded-lg bg-white/10 border border-white/10 text-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <option value="" disabled>Select an estimated monthly budget</option>
+                    <option value="$1k-$3k/mo">$1k-$3k/mo</option>
+                    <option value="$3k-$5k/mo">$3k-$5k/mo</option>
+                    <option value="$5k-$7k/mo">$5k-$7k/mo</option>
+                    <option value="$7k-$10k/mo">$7k-$10k/mo</option>
+                  </select>
                 </div>
                 <div className="sm:col-span-2">
                   <label className="block text-sm text-blue-100 mb-1">What are you trying to achieve?</label>
