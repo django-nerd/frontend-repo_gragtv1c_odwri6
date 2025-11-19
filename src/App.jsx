@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import About from './components/About'
 import Packages from './components/Packages'
 import Checkout from './components/Checkout'
 import Consultation from './components/Consultation'
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+        <About />
         <Packages onSelect={(pkg) => setSelectedPackage(pkg)} />
         <Checkout selected={selectedPackage} />
         <Consultation />
